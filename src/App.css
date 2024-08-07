@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: rgb(226, 245, 218);
 }
 
 /* ExpensesForm */
@@ -7,7 +8,7 @@
 form {
   max-width: 400px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 30px;
   border: 1px solid #ccc;
   border-radius: 10px;
   background-color: #f9f9f9;
@@ -19,16 +20,7 @@ label {
   font-weight: bold;
 }
 
-.input {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.select {
+.input, .select {
   width: 100%;
   padding: 10px;
   margin-top: 5px;
@@ -51,14 +43,14 @@ label {
 }
 
 #submit:hover {
-  background-color: #45a049;
+  background-color: #358b3a;
 }
 
 
 /* ExpensesList */
 
 table {
-  width: 100%;
+  width: 100%; 
   border-collapse: collapse;
   margin: 20px 0;
 }
@@ -66,7 +58,7 @@ table {
 th, td {
   padding: 12px 15px;
   border: 1px solid #ddd;
-  text-align: left;
+  text-align: center;
 }
 
 th {
@@ -80,11 +72,6 @@ tr:nth-child(even) {
 
 tr:hover {
   background-color: #f1f1f1;
-}
-
-thead {
-  background-color: #4CAF50;
-  color: white;
 }
 
 
@@ -105,4 +92,12 @@ thead {
   border-color: #4CAF50;
   box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
   outline: none;
+}
+
+.filterSelect{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

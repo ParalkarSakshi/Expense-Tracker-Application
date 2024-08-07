@@ -2,15 +2,15 @@ import React, { useState } from "react";
 
 function ExpenseForm({addExpense}) {
 
-    const [tital, setTital] = useState('');
+    const [title, setTitle] = useState('');
     const [amount, setAmount] = useState('');
     const [category, setCategory] = useState('');
 
     function handleSubmit(e) {
         // addExpense({title:vegatable, amount:150, category:food})
         e.preventDefault();
-        addExpense({id:Date.now(),tital,amount,category});
-        setTital('');
+        addExpense({id:Date.now(),title,amount,category});
+        setTitle('');
         setAmount('');
         setCategory('');
     }
@@ -20,13 +20,13 @@ function ExpenseForm({addExpense}) {
         
             <form onSubmit={handleSubmit}>
                 <label>
-                    Expense Tital:
+                    Expense Title:
                     <input
                         type="text"
-                        placeholder="enter the tital"
+                        placeholder="enter the title"
                         className="input"
-                        value={tital}
-                        onChange={(e) => setTital(e.target.value)}
+                        value={title}
+                        onChange={(e) => setTitle(e.target.value)}
                         required
                     />
                 </label><br />

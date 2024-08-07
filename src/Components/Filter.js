@@ -4,7 +4,7 @@ function Filter({setFilter}) {
 
     return(
         <>
-            <label>
+            <label className='filterSelect'>
                 Filter by category:
                 <select className="filteSelect" onChange={(e) => setFilter(e.target.value)}>
                         <option value='all'>All</option>
